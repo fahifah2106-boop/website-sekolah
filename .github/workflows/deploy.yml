@@ -1,13 +1,29 @@
-name: Deploy Website
+name: CI/CD Website Sekolah
+
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  build:
+  validasi:
+    name: Validasi dan Persiapan Deployment
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Code
+      - name: Ambil Kode dari Repositori
         uses: actions/checkout@v3
-      - name: Success Message
-        run: echo "CI/CD berjalan sukses! Website siap di-deploy."
+
+      - name: Verifikasi Struktur File
+        run: |
+          echo "Memeriksa keberadaan file utama..."
+          test -f index.html && echo "index.html ditemukan."
+          test -f profil.html && echo "profil.html ditemukan."
+          test -f berita.html && echo "berita.html ditemukan."
+          test -f style.css && echo "style.css ditemukan."
+
+      - name: Selesai
+        run: echo "CI/CD berjalan sukses! Website SMK Teknologi Indonesia siap untuk di-deploy ke produksi."

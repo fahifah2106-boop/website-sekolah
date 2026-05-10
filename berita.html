@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita & Kegiatan - SMK Teknologi Indonesia</title>
+    <meta name="description" content="Dapatkan informasi terbaru mengenai kegiatan, prestasi, dan pengumuman dari SMK Teknologi Indonesia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+        .news-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .news-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #e5e7eb;
+        }
+        .news-content {
+            padding: 1.5rem;
+        }
+        .news-date {
+            font-size: 0.85rem;
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .news-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+        .news-excerpt {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ST</div>
+                <span>SMK Teknologi</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil</a>
+                <a href="berita.html">Berita</a>
+            </div>
+            <a href="#kontak" class="btn btn-primary">Hubungi Kami</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section style="background: linear-gradient(135deg, var(--secondary-dark) 0%, var(--secondary) 100%); color: white; padding: 60px 0;">
+        <div class="container">
+            <h1>Berita & Kegiatan</h1>
+            <p>Ikuti perkembangan terbaru dari komunitas sekolah kami.</p>
+        </div>
+    </section>
+
+    <!-- News List -->
+    <section>
+        <div class="container">
+            <div class="news-grid">
+                <!-- Article 1 -->
+                <article class="news-card">
+                    <div class="news-img" style="background: linear-gradient(45deg, #1e3a8a, #10b981);"></div>
+                    <div class="news-content">
+                        <span class="news-date">10 Mei 2026</span>
+                        <h2 class="news-title">Siswa SMK Teknologi Indonesia Raih Juara 1 LKS Nasional</h2>
+                        <p class="news-excerpt">Kebanggaan besar menyelimuti sekolah setelah tim robotik kami berhasil mengungguli peserta lain dalam Lomba Kompetensi Siswa...</p>
+                        <a href="#" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Baca Selengkapnya</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="news-card">
+                    <div class="news-img" style="background: linear-gradient(45deg, #f59e0b, #ef4444);"></div>
+                    <div class="news-content">
+                        <span class="news-date">05 Mei 2026</span>
+                        <h2 class="news-title">Workshop Cybersecurity Bersama Mitra Industri Global</h2>
+                        <p class="news-excerpt">Dalam rangka meningkatkan literasi keamanan siber, sekolah mengadakan workshop intensif selama tiga hari berturut-turut...</p>
+                        <a href="#" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Baca Selengkapnya</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="news-card">
+                    <div class="news-img" style="background: linear-gradient(45deg, #8b5cf6, #d946ef);"></div>
+                    <div class="news-content">
+                        <span class="news-date">01 Mei 2026</span>
+                        <h2 class="news-title">Kunjungan Industri ke Silicon Valley Indonesia</h2>
+                        <p class="news-excerpt">Siswa kelas XII jurusan Rekayasa Perangkat Lunak melakukan kunjungan inspiratif ke kawasan pusat teknologi di Indonesia...</p>
+                        <a href="#" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Baca Selengkapnya</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>SMK Teknologi Indonesia</h3>
+                    <p>Jl. Teknologi No. 45, Jakarta Selatan, Indonesia</p>
+                    <p>Email: info@smk-teknologi.sch.id</p>
+                    <p>Telp: (021) 1234-5678</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Sekolah</a></li>
+                        <li><a href="berita.html">Berita & Kegiatan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Media Sosial</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter/X</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMK Teknologi Indonesia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

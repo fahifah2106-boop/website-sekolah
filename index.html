@@ -3,30 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Sekolah</title>
+    <title>SMK Teknologi Indonesia - Beranda</title>
+    <meta name="description" content="Website Resmi SMK Teknologi Indonesia. Mencetak generasi unggul di bidang teknologi dan inovasi.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="title-with-icons">
-                <div class="icons">
-                    <span class="diamond"></span>
-                    <span class="diamond"></span>
-                </div>
-                <h1>SMK Teknologi Indonesia</h1>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ST</div>
+                <span>SMK Teknologi</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil</a>
+                <a href="berita.html">Berita</a>
             </div>
-            <p>Website Deployment CI/CD</p>
+            <a href="#kontak" class="btn btn-primary">Hubungi Kami</a>
         </div>
-    </div>
+    </nav>
 
-    <div class="main-content">
-        <div class="container">
-            <h2>Selamat Datang</h2>
-            <p>Website berhasil di-deploy secara online.</p>
-            <button id="mainButton" class="btn-green" onclick="pesan()">Klik Saya</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Membangun Masa Depan Dengan Teknologi</h1>
+                <p>Bergabunglah dengan SMK Teknologi Indonesia dan jadilah ahli teknologi masa depan yang kompeten, kreatif, dan berintegritas.</p>
+                <div class="hero-btns">
+                    <a href="profil.html" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="gedung_sekolah_modern_1778381016325.png" alt="Gedung SMK Teknologi Indonesia">
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Mengapa Memilih Kami?</h2>
+                <p>Kami menyediakan fasilitas terbaik dan kurikulum yang relevan dengan kebutuhan industri saat ini.</p>
+            </div>
+            <div class="features-grid">
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Kurikulum Industri</h3>
+                    <p>Materi pembelajaran yang disusun bersama mitra industri ternama untuk menjamin kesiapan kerja lulusan.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔬</div>
+                    <h3>Fasilitas Modern</h3>
+                    <p>Laboratorium komputer dan bengkel praktik dengan peralatan standar internasional.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3>Prestasi Unggul</h3>
+                    <p>Mencetak siswa-siswi berprestasi di tingkat nasional maupun internasional dalam kompetisi teknologi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="background-color: var(--primary); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="margin-bottom: 1.5rem; font-size: 2.5rem;">Siap Menjadi Bagian Dari Kami?</h2>
+            <p style="margin-bottom: 2rem; font-size: 1.1rem; opacity: 0.9;">Pendaftaran siswa baru tahun ajaran 2026/2027 telah dibuka.</p>
+            <a href="#" class="btn" style="background-color: white; color: var(--primary);">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>SMK Teknologi Indonesia</h3>
+                    <p>Jl. Teknologi No. 45, Jakarta Selatan, Indonesia</p>
+                    <p>Email: info@smk-teknologi.sch.id</p>
+                    <p>Telp: (021) 1234-5678</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Sekolah</a></li>
+                        <li><a href="berita.html">Berita & Kegiatan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Media Sosial</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter/X</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SMK Teknologi Indonesia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
